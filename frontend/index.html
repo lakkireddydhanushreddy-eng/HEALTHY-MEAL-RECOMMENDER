@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Healthy Meal Recommender</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🥗 Healthy Meal Recommender</h1>
+
+<form id="mealForm">
+  <label>Health Conditions</label>
+  <input type="text" placeholder="diabetes, hypertension" id="conditions">
+
+  <label>Diet Preference</label>
+  <select id="diet">
+    <option value="vegetarian">Vegetarian</option>
+    <option value="vegan">Vegan</option>
+    <option value="non-vegetarian">Non-Vegetarian</option>
+  </select>
+
+  <label>Allergies</label>
+  <input type="text" placeholder="nuts, dairy" id="allergies">
+
+  <label>Budget</label>
+  <select id="budget">
+    <option value="low">Low</option>
+    <option value="medium">Medium</option>
+  </select>
+
+  <label>Max Prep Time (minutes)</label>
+  <input type="number" id="time" value="30">
+
+  <button type="submit">Get Meals</button>
+</form>
+
+<div id="results"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

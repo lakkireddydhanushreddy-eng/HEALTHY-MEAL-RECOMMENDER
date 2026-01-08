@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Healthy Meal Recommender – Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Welcome to Your Health Dashboard</h1>
+
+<!-- BMI & BMR SECTION -->
+<section class="card">
+  <h2>BMI & BMR Calculator</h2>
+
+  <input id="height" placeholder="Height (cm)">
+  <input id="weight" placeholder="Weight (kg)">
+  <input id="age" placeholder="Age">
+  
+  <select id="gender">
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+  </select>
+
+  <button onclick="calculateBMI()">Calculate</button>
+  <p id="result"></p>
+</section>
+
+<!-- GOAL SELECTION -->
+<section class="card">
+  <h2>Health Goal</h2>
+  <select id="goal">
+    <option value="weight_loss">Weight Loss</option>
+    <option value="maintenance">Maintenance</option>
+    <option value="muscle_gain">Muscle Gain</option>
+  </select>
+</section>
+
+<!-- MEAL RECOMMENDER -->
+<section class="card">
+  <h2>AI Meal Recommendations</h2>
+
+  <select id="budget">
+    <option value="low">Low Budget</option>
+    <option value="medium">Medium Budget</option>
+  </select>
+
+  <input id="prepTime" placeholder="Max Prep Time (minutes)">
+  
+  <button onclick="getRecommendations()">Recommend Meals</button>
+  <div id="meals"></div>
+</section>
+
+<script src="bmi.js"></script>
+<script src="recommend.js"></script>
+
+</body>
+</html>
